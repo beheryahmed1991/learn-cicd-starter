@@ -18,3 +18,7 @@ jobs:
 
       - name: graceful workflow
         run: (exit 0)
+  style:
+    name: Style
+    run: test -z $(go fmt ./...) 
+
